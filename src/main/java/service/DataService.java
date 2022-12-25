@@ -6,9 +6,9 @@ import java.util.List;
 
 public class DataService {
 
-    public static void getData(){
+    public static void readData(){
         BedrijfService bedrijfService = new BedrijfService();
-        List<Bedrijf> bedrijven =bedrijfService.getBedrijven();
+        List<Bedrijf> bedrijven =bedrijfService.readBedrijven();
 
         System.out.println(
                 "+------------------+------------------------+"

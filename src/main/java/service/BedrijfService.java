@@ -17,8 +17,8 @@ public class BedrijfService {
         this.repository = new BedrijfRepository(JPAConfiguration.getEntityManager());
     }
 
-    public List<Bedrijf> getBedrijven() {
-        return repository.getBedrijven();
+    public List<Bedrijf> readBedrijven() {
+        return repository.readBedrijven();
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {

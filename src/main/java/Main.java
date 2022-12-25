@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         //DummyDataService.createDummyData();
         //Applicatie.App();
-        //DataService.getData();
-        DataService.deleteBedrijf();
+        DataService.readData();
+        //DataService.deleteBedrijf();
     }
 }

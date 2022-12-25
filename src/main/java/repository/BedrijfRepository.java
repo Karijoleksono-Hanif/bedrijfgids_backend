@@ -26,7 +26,7 @@ public class BedrijfRepository {
         return bedrijf;
     }
 
-    public List<Bedrijf> getBedrijven() {
+    public List<Bedrijf> readBedrijven() {
         String query = "select g from Bedrijf g";
         TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
         List<Bedrijf> bedrijven = typedQuery.getResultList();
