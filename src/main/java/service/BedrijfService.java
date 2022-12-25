@@ -28,5 +28,5 @@ public class BedrijfService {
     public Bedrijf updateBedrijf(Bedrijf bedrijf) {
         return repository.updateBedrijf(bedrijf);
     }
-
+    public Bedrijf deleteBedrijf(Bedrijf bedrijf) {return repository.deleteBedrijf(bedrijf);}
 }

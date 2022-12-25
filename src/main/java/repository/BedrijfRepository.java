@@ -36,12 +36,25 @@ public class BedrijfRepository {
     public Bedrijf updateBedrijf(Bedrijf bedrijf) {
         try {
             entityManager.getTransaction().begin();
-            entityManager.find(Bedrijf.class, bedrijf.getId(1L));
+            entityManager.find(Bedrijf.class, bedrijf.getId());
             entityManager.merge(bedrijf);
             entityManager.getTransaction().commit();
 
         } catch (Exception e) {
             throw new RuntimeException(e);
+        }
+        return bedrijf;
+    }
+
+    public Bedrijf deleteBedrijf(Bedrijf bedrijf) {
+        try {
+            entityManager.getTransaction().begin();
+            Bedrijf b = entityManager.find(Bedrijf.class, bedrijf.getId());
+            if (bedrijf != null) entityManager.remove(b);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            entityManager.getTransaction().rollback();
         }
         return bedrijf;
     }

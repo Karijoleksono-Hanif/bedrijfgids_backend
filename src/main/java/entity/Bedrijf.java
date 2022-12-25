@@ -24,7 +24,7 @@ public class Bedrijf {
     @ManyToMany(mappedBy = "bedrijfs")
     protected Set<Industrie> industries = new HashSet<>();
 
-    public Long getId(long id) {
+    public Long getId() {
         return id;
     }
 

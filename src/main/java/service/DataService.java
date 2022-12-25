@@ -21,4 +21,11 @@ public class DataService {
 
     }
 
+    public static void deleteBedrijf(){
+        BedrijfService  bedrijfService = new BedrijfService();
+        Bedrijf bedrijf = new Bedrijf();
+        bedrijf.setId(1L);
+        bedrijfService.deleteBedrijf(bedrijf);
+    }
+
 }
