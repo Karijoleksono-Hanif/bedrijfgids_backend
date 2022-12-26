@@ -15,7 +15,9 @@ public class DataService {
         );
 
         bedrijven.forEach( bedrijf ->
-                System.out.format( "| Bedrijf Naam         : " + bedrijf.getBedrijf_naam() +"\n"+ "| Bedrijf Email adress : "+ bedrijf.getEmail_adress() + "\n\n"
+                System.out.format( "| Bedrijf ID           : " + bedrijf.getId() +"\n" +
+                                   "| Bedrijf Naam         : " + bedrijf.getBedrijf_naam() +"\n" +
+                                   "| Bedrijf Email adress : "+ bedrijf.getEmail_adress() + "\n\n"
                 ));
         System.out.println("+------------------+------------------------+");
 
