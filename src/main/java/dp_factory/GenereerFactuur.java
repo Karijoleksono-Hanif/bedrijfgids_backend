@@ -4,10 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-  class GenereerFactuur {
+  public class GenereerFactuur {
 
-      public static void main(String args[]) throws IOException {
-
+      public static void factuur() throws IOException {
           GetPlan planFactory = new GetPlan();
 
           System.out.print("Voer een van de volgende plan namen in 'standardplan' of 'commercieelplan': ");
@@ -22,5 +21,9 @@ import java.io.InputStreamReader;
           System.out.print("Totaal bedrag voor " + planNaam + " voor  " + aantal + " maanden is: SRD ");
           p.getPrijs();
           p.calculeerRekening(aantal);
+      }
+
+      public static void main(String args[]) throws IOException {
+          GenereerFactuur.factuur();
       }
   }
