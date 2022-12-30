@@ -12,7 +12,6 @@ public class EntiteitService {
     public EntiteitService() {
         this.entiteitRepository = new EntiteitRepository(JPAConfiguration.getEntityManager());
     }
-
     public Entiteit createEntiteit(Entiteit entiteit){
         return entiteitRepository.createEntiteit(entiteit);
     }

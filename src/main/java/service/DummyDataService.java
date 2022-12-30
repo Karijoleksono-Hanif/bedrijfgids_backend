@@ -73,7 +73,6 @@ public class DummyDataService {
         bedrijf1.setEntiteit(zaak1);
         bedrijf1.setMediaFiles(mediaFiles1);
 
-
         bedrijf2.setBedrijf_naam("CHS");
         bedrijf2.setEmail_adress("costumer@chs.sr");
         bedrijf2.setEntiteit(zaak1);
@@ -159,6 +158,9 @@ public class DummyDataService {
         filialenService.createFilialen(filiaal4);
         filialenService.createFilialen(filiaal5);
         filialenService.createFilialen(filiaal6);
+
+//        bedrijfService.deleteBedrijf(bedrijf1);
+//        bedrijfService.updateBedrijf(bedrijf1);
 
     }
 }

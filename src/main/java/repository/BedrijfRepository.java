@@ -18,7 +18,7 @@ public class BedrijfRepository {
         try {
             entityManager.getTransaction().begin();
             entityManager.persist(bedrijf);
-            entityManager.getTransaction().commit(); // als dit niet wordt gezet bij hibernate gaat hij de object niet opslaan
+            entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
             entityManager.getTransaction().rollback();

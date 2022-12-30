@@ -13,7 +13,7 @@ public class Filialen {
     private String district;
     private String openingstijden;
 
-    @ManyToOne()
+    @ManyToOne(cascade = CascadeType.ALL)
     private Bedrijf bedrijf;
 
     public Long getId() {

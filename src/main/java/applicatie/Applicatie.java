@@ -74,7 +74,7 @@ public class Applicatie {
         DummyDataService.createDummyData();
         System.out.println("Dummy Data created succesful !!!\n");
         int choice;
-        Scanner input = null;
+        Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
             System.out.print("1  [<]  TERUG NAAR MENU\n");
@@ -126,8 +126,8 @@ public class Applicatie {
     }
 
     public static void subMenu3() throws InterruptedException, IOException {
-        System.out.println("Data update operation succesful !!!\n");
-        //DataService.update();
+        System.out.println("Data bedrijf update operation succesful !!!\n");
+        DataService.updateBedrijf();
         int choice;
         Scanner input = new Scanner(System.in);
         do {

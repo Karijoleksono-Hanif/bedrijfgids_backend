@@ -13,7 +13,7 @@ public class Industrie {
     private Long id;
     private String industrieNaam;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "Bedrijf_Industrie",
             joinColumns = @JoinColumn(name = "Bedrijf_id"),

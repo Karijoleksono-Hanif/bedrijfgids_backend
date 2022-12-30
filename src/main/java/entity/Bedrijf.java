@@ -15,13 +15,13 @@ public class Bedrijf {
     private String bedrijf_naam;
     private String email_adress;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private MediaFiles mediaFiles;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Entiteit entiteit;
 
-    @ManyToMany(mappedBy = "bedrijfs")
+    @ManyToMany(mappedBy = "bedrijfs", cascade = CascadeType.ALL)
     protected Set<Industrie> industries = new HashSet<>();
 
     public Long getId() {
