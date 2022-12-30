@@ -23,7 +23,7 @@ import java.io.InputStreamReader;
           p.calculeerRekening(aantal);
       }
 
-      public static void main(String args[]) throws IOException {
-          GenereerFactuur.factuur();
-      }
+//      public static void main(String args[]) throws IOException {
+//          GenereerFactuur.factuur();
+//      }
   }

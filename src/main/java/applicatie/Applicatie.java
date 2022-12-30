@@ -1,5 +1,6 @@
 package applicatie;
 
+import dp_ChainofResponsibility.PaymentDemo;
 import dp_composite.BetalingMedewerkers;
 import dp_factory.GenereerFactuur;
 import service.DataService;
@@ -59,14 +60,6 @@ public class Applicatie {
                 close();
                 break;
         }
-        // BAD MENU OPTION DIRECT
-        if (choice > 8 || choice < 1) {
-            do {
-                choice = input.nextInt();
-            }
-            while (choice < 8);
-        }
-        input.close();
     }
 
 
@@ -88,12 +81,6 @@ public class Applicatie {
                 Menu();
             case 2:
                 close();
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 
@@ -115,13 +102,6 @@ public class Applicatie {
                 Menu();
             case 2:
                 close();
-
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 
@@ -143,13 +123,6 @@ public class Applicatie {
                 Menu();
             case 2:
                 close();
-
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 
@@ -171,19 +144,12 @@ public class Applicatie {
                 Menu();
             case 2:
                 close();
-
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 
     public static void subMenu5() throws InterruptedException, IOException {
         System.out.println("Design Patterns Chain of responsibilit succesful !!!\n");
-        //DataService.update();
+        PaymentDemo.Transactie();
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -200,12 +166,6 @@ public class Applicatie {
             case 2:
                 close();
 
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 
@@ -228,12 +188,6 @@ public class Applicatie {
             case 2:
                 close();
 
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
     public static void subMenu7() throws InterruptedException, IOException {
@@ -254,13 +208,6 @@ public class Applicatie {
                 Menu();
             case 2:
                 close();
-
-                if (choice > 2 || choice < 1) {
-                    do {
-                        choice = input.nextInt();
-                    }
-                    while (choice < 2);
-                }
         }
     }
 

@@ -12,7 +12,7 @@ public class BetalingMedewerkers {
         eigenaar.print();
     }
 
-    public static void main(String args[]) {
-        BetalingMedewerkers.Betalingen();
-    }
+//    public static void main(String args[]) {
+//        BetalingMedewerkers.Betalingen();
+//    }
 }
