@@ -1,6 +1,7 @@
 package repository;
 
 import entity.Bedrijf;
+import entity.Industrie;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 

@@ -1,6 +1,8 @@
 package entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,6 +16,7 @@ public class Industrie {
     private String industrieNaam;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinTable(
             name = "Bedrijf_Industrie",
             joinColumns = @JoinColumn(name = "Bedrijf_id"),

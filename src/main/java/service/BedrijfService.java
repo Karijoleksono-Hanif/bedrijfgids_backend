@@ -12,19 +12,15 @@ import java.util.List;
 public class BedrijfService {
 
     private final BedrijfRepository repository;
-
     public BedrijfService() {
         this.repository = new BedrijfRepository(JPAConfiguration.getEntityManager());
     }
-
     public List<Bedrijf> readBedrijven() {
         return repository.readBedrijven();
     }
-
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
         return repository.createBedrijf(bedrijf);
     }
-
     public Bedrijf updateBedrijf(Bedrijf bedrijf) {
         return repository.updateBedrijf(bedrijf);
     }

@@ -16,4 +16,8 @@ public class FilialenService {
     public Filialen createFilialen(Filialen filialen){
         return filialenRepository.createFilialen(filialen);
     }
+
+    public Filialen deleteFiliaal(Filialen filialen){
+        return filialenRepository.deleteFiliaal(filialen);
+    }
 }

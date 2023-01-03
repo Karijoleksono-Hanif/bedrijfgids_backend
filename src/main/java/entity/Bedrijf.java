@@ -1,6 +1,8 @@
 package entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,12 +18,15 @@ public class Bedrijf {
     private String email_adress;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private MediaFiles mediaFiles;
 
     @ManyToOne(cascade = CascadeType.ALL)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Entiteit entiteit;
 
-    @ManyToMany(mappedBy = "bedrijfs", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "bedrijfs", fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     protected Set<Industrie> industries = new HashSet<>();
 
     public Long getId() {

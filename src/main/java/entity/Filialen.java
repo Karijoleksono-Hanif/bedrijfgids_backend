@@ -1,6 +1,8 @@
 package entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class Filialen {
@@ -14,6 +16,7 @@ public class Filialen {
     private String openingstijden;
 
     @ManyToOne(cascade = CascadeType.ALL)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Bedrijf bedrijf;
 
     public Long getId() {
