@@ -4,6 +4,8 @@ import configuration.JPAConfiguration;
 import entity.MediaFiles;
 import repository.MediaFilesRepository;
 
+import java.util.List;
+
 public class MediaFilesService {
     private MediaFilesRepository mediaFilesRepository;
 
@@ -11,5 +13,8 @@ public class MediaFilesService {
     }
     public MediaFiles createMediaFiles(MediaFiles mediaFiles){return mediaFilesRepository.createMediaFiles(mediaFiles);
     }
-    public MediaFiles deleteMediaFiles(MediaFiles mediaFiles) {return mediaFilesRepository.deleteMediaFiles(mediaFiles);}
+    public List<MediaFiles> readMediaFiles() {
+        return mediaFilesRepository.readMediaFiles();
+    }
+    public boolean deleteMediaFiles(long id){return mediaFilesRepository.deleteMediaFiles(id);}
 }

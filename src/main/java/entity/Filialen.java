@@ -22,47 +22,36 @@ public class Filialen {
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getTelefoonNummer() {
         return telefoonNummer;
     }
-
     public void setTelefoonNummer(String  telefoonNummer) {
         this.telefoonNummer = telefoonNummer;
     }
-
     public String getAdress() {
         return adress;
     }
-
     public void setAdress(String adress) {
         this.adress = adress;
     }
-
     public String getDistrict() {
         return district;
     }
-
     public void setDistrict(String district) {
         this.district = district;
     }
-
     public String getOpeningstijden() {
         return openingstijden;
     }
-
     public void setOpeningstijden(String openingstijden) {
         this.openingstijden = openingstijden;
     }
-
     public Bedrijf getBedrijf() {
         return bedrijf;
     }
-
     public void setBedrijf(Bedrijf bedrijf) {
         this.bedrijf = bedrijf;
     }

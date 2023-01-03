@@ -15,15 +15,12 @@ public class Entiteit {
     public Long getId(long id) {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
-
     public String getTypeZaak() {
         return typeZaak;
     }
-
     public void setTypeZaak(String typeZaak) {
         this.typeZaak = typeZaak;
     }

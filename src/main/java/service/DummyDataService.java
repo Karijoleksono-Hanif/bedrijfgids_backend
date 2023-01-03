@@ -12,8 +12,7 @@ public class DummyDataService {
         Entiteit zaak3 = new Entiteit();
         Entiteit zaak4 = new Entiteit();
 
-
-        zaak1.setTypeZaak("Naamloze Venootschap (N.V.)");
+        zaak1.setTypeZaak("Naamloze Vennootschap (N.V.)");
         zaak2.setTypeZaak("Eenmans Zaak");
         zaak3.setTypeZaak("Stichting of Vereniging");
         zaak4.setTypeZaak("Venootschao onder Firma(V.O.F.)");
@@ -158,9 +157,6 @@ public class DummyDataService {
         filialenService.createFilialen(filiaal4);
         filialenService.createFilialen(filiaal5);
         filialenService.createFilialen(filiaal6);
-
-//        bedrijfService.deleteBedrijf(bedrijf1);
-//        bedrijfService.updateBedrijf(bedrijf1);
 
     }
 

@@ -18,7 +18,4 @@ public class PaymentDemo {
         loggerChain.logMessage("Transaction status", PaymentLogger.PAYMENTSUCCESFUL);
     }
 
-//    public static void main(String[] args) {
-//        Transactie();
-//    }
 }

@@ -11,18 +11,18 @@ import java.util.List;
 
 public class BedrijfService {
 
-    private final BedrijfRepository repository;
+    private final BedrijfRepository bedrijfRepository;
     public BedrijfService() {
-        this.repository = new BedrijfRepository(JPAConfiguration.getEntityManager());
+        this.bedrijfRepository = new BedrijfRepository(JPAConfiguration.getEntityManager());
     }
     public List<Bedrijf> readBedrijven() {
-        return repository.readBedrijven();
+        return bedrijfRepository.readBedrijven();
     }
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
-        return repository.createBedrijf(bedrijf);
+        return bedrijfRepository.createBedrijf(bedrijf);
     }
     public Bedrijf updateBedrijf(Bedrijf bedrijf) {
-        return repository.updateBedrijf(bedrijf);
+        return bedrijfRepository.updateBedrijf(bedrijf);
     }
-    public Bedrijf deleteBedrijf(Bedrijf bedrijf) {return repository.deleteBedrijf(bedrijf);}
+    public boolean deleteBedrijf(long id) {return bedrijfRepository.deleteBedrijf(id);}
 }

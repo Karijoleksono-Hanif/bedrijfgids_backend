@@ -14,23 +14,18 @@ public class MediaFiles {
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getFotos() {
         return fotos;
     }
-
     public void setFotos(String fotos) {
         this.fotos = fotos;
     }
-
     public String getVideos() {
         return videos;
     }
-
     public void setVideos(String videos) {
         this.videos = videos;
     }

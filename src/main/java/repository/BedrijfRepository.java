@@ -1,7 +1,6 @@
 package repository;
 
 import entity.Bedrijf;
-import entity.Industrie;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
@@ -28,10 +27,10 @@ public class BedrijfRepository {
     }
 
     public List<Bedrijf> readBedrijven() {
-        String query = "select g from Bedrijf g";
+        String query = "select b from Bedrijf b";
         TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
-        List<Bedrijf> bedrijven = typedQuery.getResultList();
-        return bedrijven;
+        List<Bedrijf> b = typedQuery.getResultList();
+        return b;
     }
 
     public Bedrijf updateBedrijf(Bedrijf bedrijf) {
@@ -47,17 +46,17 @@ public class BedrijfRepository {
         return bedrijf;
     }
 
-    public Bedrijf deleteBedrijf(Bedrijf bedrijf) {
+    public boolean  deleteBedrijf(long id) {
         try {
             entityManager.getTransaction().begin();
-            Bedrijf b = entityManager.find(Bedrijf.class, bedrijf.getId());
-            if (bedrijf != null) entityManager.remove(b);
+            Bedrijf b = entityManager.find(Bedrijf.class, id);
+            entityManager.remove(b);
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
             entityManager.getTransaction().rollback();
         }
-        return bedrijf;
+        return false;
     }
 
 }

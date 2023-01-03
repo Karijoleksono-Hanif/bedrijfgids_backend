@@ -24,27 +24,21 @@ public class Industrie {
     )
 
     protected Set<Bedrijf> bedrijfs = new HashSet<Bedrijf>();
-
     public Set<Bedrijf> getBedrijfs() {
         return bedrijfs;
     }
-
     public void setBedrijfs(Set<Bedrijf> bedrijfs) {
         this.bedrijfs = bedrijfs;
     }
-
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getIndustrieNaam() {
         return industrieNaam;
     }
-
     public void setIndustrieNaam(String industrieNaam) {
         this.industrieNaam = industrieNaam;
     }

@@ -22,8 +22,4 @@ import java.io.InputStreamReader;
           p.getPrijs();
           p.calculeerRekening(aantal);
       }
-
-//      public static void main(String args[]) throws IOException {
-//          GenereerFactuur.factuur();
-//      }
   }

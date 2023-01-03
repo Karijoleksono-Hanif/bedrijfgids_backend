@@ -6,7 +6,6 @@ import entity.Entiteit;
 import repository.EntiteitRepository;
 
 public class EntiteitService {
-
     private EntiteitRepository entiteitRepository;
 
     public EntiteitService() {

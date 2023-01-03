@@ -28,14 +28,14 @@ public class Applicatie {
         do {
             System.out.println("\n\n\n\n\n\nMENU bedrijven gids");
             System.out.println("------------------------------------");
-            System.out.print("1       Dummy Data toevoegen in de app \n");
+            System.out.print("1       Data Dummy create operation \n");
             System.out.print("2       Data read operation\n");
             System.out.print("3       Data update operation\n");
             System.out.print("4       Data delete operation\n");
             System.out.print("5       Design Patterns Chain of responsibility\n");
             System.out.print("6       Design Patterns Composite\n");
             System.out.print("7       Design Patterns Factory\n");
-            System.out.print("8  [X]  AFSLUITEN\n");
+            System.out.print("8  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -65,13 +65,13 @@ public class Applicatie {
 
     public static void subMenu() throws InterruptedException, IOException {
         DummyDataService.createDummyData();
-        System.out.println("Dummy Data created succesful !!!\n");
+        System.out.println(">> Dummy Data created succesful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -85,14 +85,14 @@ public class Applicatie {
     }
 
     public static void subMenu2() throws InterruptedException, IOException {
-        System.out.println("Data Read operation succesful !!!\n");
-        DataService.readData();
+        DataService.readDataBedrijf();
+        System.out.println(">> Data Read 'bedrijf' operation succesful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -106,14 +106,15 @@ public class Applicatie {
     }
 
     public static void subMenu3() throws InterruptedException, IOException {
-        System.out.println("Data bedrijf update operation succesful !!!\n");
         DataService.updateBedrijf();
+        DataService.readDataBedrijf();
+        System.out.println(">> Data bedrijf update 'bedrijf' operation succesful !!! (see 'updated' key word above)\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -127,14 +128,15 @@ public class Applicatie {
     }
 
     public static void subMenu4() throws InterruptedException, IOException {
-        System.out.println("Data delete operation succesful !!!");
-        //DataService.update();
+        DataService.deleteMediaFiles();
+        DataService.readDataMediaFiles();
+        System.out.println(">> Data delete 'mediaFiles' operation succesful !!! (data deleted where id is '1', see above)");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -148,14 +150,14 @@ public class Applicatie {
     }
 
     public static void subMenu5() throws InterruptedException, IOException {
-        System.out.println("Design Patterns Chain of responsibilit succesful !!!\n");
         PaymentDemo.Transactie();
+        System.out.println(">> Design Patterns Chain of responsibility succesful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -170,14 +172,14 @@ public class Applicatie {
     }
 
     public static void subMenu6() throws InterruptedException, IOException {
-        System.out.println("Design Patterns Composite succesful !!!\n");
         BetalingMedewerkers.Betalingen();
+        System.out.println(">> Design Patterns Composite succesful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
@@ -191,14 +193,14 @@ public class Applicatie {
         }
     }
     public static void subMenu7() throws InterruptedException, IOException {
-        System.out.println("Design Patterns Factory succesful !!!\n");
         GenereerFactuur.factuur();
+        System.out.println(">> Design Patterns Factory succesful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("-----------------------\n");
-            System.out.print("1  [<]  TERUG NAAR MENU\n");
-            System.out.print("2  [X]  AFSLUITEN\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
