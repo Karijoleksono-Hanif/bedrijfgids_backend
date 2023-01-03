@@ -1,10 +1,15 @@
-## Werknemer administratie
+## Bedrijf Gids
+Een applicatie voor gebruikers die gratis en betaald makkelijk toegang kunnen krijgen tot bedrijf gegevens in Suriname
 
-Een simpel applicatie voor het tonen van alle werknemers uit de database, middels een jdbc connectie.
+Hiervoor is er gebruik gemaakt van Hibernate JPA.
 
 ## Instructies
-In de resource directory(src>main>resources>sql-script) vind je de sql script met wat dummy data, draai
-de script voor het creeren van je database, tabel en data.
-Vervang in de DatabaseConfiguration Class (src>main>java>configuration) je url, username en password.
+In de resources directory(src/resources/bedrijfGids.sql) vind je de sql script om de database te creeren in workbench. 
 
-Als je de main method draait zou je je resultaten moeten zien in de console.
+Voordat je de applicatie gaat runnen de (persistence.xml) zetten op 'create-update'.
+
+In de Main (Applicatie.Menu();) run je de applicatie en kan je dan veervolgens in de terminal d.m.v. cijfer inout de opties
+kiezen die je wenst te runnen van de applicatie. (De menu's zijn gebruikersvriendelijk en spreken voor zichzelf).
+
+
+
