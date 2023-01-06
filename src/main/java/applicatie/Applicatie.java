@@ -65,7 +65,7 @@ public class Applicatie {
 
     public static void subMenu() throws InterruptedException, IOException {
         DummyDataService.createDummyData();
-        System.out.println(">> Dummy Data created succesful !!!\n");
+        System.out.println(">> Dummy Data created successful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -86,7 +86,7 @@ public class Applicatie {
 
     public static void subMenu2() throws InterruptedException, IOException {
         DataService.readDataBedrijf();
-        System.out.println(">> Data Read 'bedrijf' operation succesful !!!\n");
+        System.out.println(">> Data Read 'bedrijf' operation successful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -108,7 +108,7 @@ public class Applicatie {
     public static void subMenu3() throws InterruptedException, IOException {
         DataService.updateBedrijf();
         DataService.readDataBedrijf();
-        System.out.println(">> Data bedrijf update 'bedrijf' operation succesful !!! (see 'updated' key word above)\n");
+        System.out.println(">> Data bedrijf update 'bedrijf' operation successful !!! (see 'updated' key word above)\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -130,7 +130,7 @@ public class Applicatie {
     public static void subMenu4() throws InterruptedException, IOException {
         DataService.deleteMediaFiles();
         DataService.readDataMediaFiles();
-        System.out.println(">> Data delete 'mediaFiles' operation succesful !!! (data deleted where id is '1', see above)");
+        System.out.println(">> Data delete 'mediaFiles' operation successful !!! (data deleted where id is '1', see above)");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -151,7 +151,7 @@ public class Applicatie {
 
     public static void subMenu5() throws InterruptedException, IOException {
         PaymentDemo.Transactie();
-        System.out.println(">> Design Patterns Chain of responsibility succesful !!!\n");
+        System.out.println(">> Design Patterns Chain of responsibility successful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -173,7 +173,7 @@ public class Applicatie {
 
     public static void subMenu6() throws InterruptedException, IOException {
         BetalingMedewerkers.Betalingen();
-        System.out.println(">> Design Patterns Composite succesful !!!\n");
+        System.out.println(">> Design Patterns Composite successful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
@@ -194,7 +194,7 @@ public class Applicatie {
     }
     public static void subMenu7() throws InterruptedException, IOException {
         GenereerFactuur.factuur();
-        System.out.println(">> Design Patterns Factory succesful !!!\n");
+        System.out.println(">> Design Patterns Factory successful !!!\n");
         int choice;
         Scanner input = new Scanner(System.in);
         do {
