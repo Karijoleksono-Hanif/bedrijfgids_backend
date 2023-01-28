@@ -1,3 +1,4 @@
+## BLOK 2
 ## Bedrijf Gids
 Een applicatie voor gebruikers die gratis en betaald makkelijk toegang kunnen krijgen tot bedrijf gegevens in Suriname.
 
